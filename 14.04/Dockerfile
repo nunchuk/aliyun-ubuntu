@@ -7,7 +7,7 @@ FROM ubuntu:14.04
 MAINTAINER Zhang Xinye <xinye@zhijin.com>
 
 # Replace aliyun repository URL to the default sources
-RUN sed -i 's/archive.ubuntu.com/mirrors.aliyuncs.com/' /etc/apt/sources.list
+RUN sed -i 's/archive.ubuntu.com/mirrors.aliyun.com/' /etc/apt/sources.list
 
 # Update the repository and patch system
 RUN apt-get update -y && \
