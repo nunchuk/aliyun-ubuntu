@@ -6,7 +6,7 @@
 FROM ubuntu:14.04
 MAINTAINER Zhang Xinye <xinye@zhijin.com>
 
-# Replace aliyun repository URL to the default sources
+# Replace by aliyun repository URL instead the default sources
 RUN sed -i 's/archive.ubuntu.com/mirrors.aliyun.com/' /etc/apt/sources.list
 
 # Update the repository and patch system
@@ -16,8 +16,9 @@ RUN apt-get update -y && \
 # delete all the apt list files since they're big and get stale quickly
 RUN rm -rf /var/lib/apt/lists/*
 
-# Replace aliyun ntp server
+# Replace by aliyun ntp server
 ADD ntp.conf /etc/ntp.conf
 
 # change default time zone
+# ls -R --group-directories-first /usr/share/zoneinfo
 RUN rm /etc/localtime && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
