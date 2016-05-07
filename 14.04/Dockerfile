@@ -18,3 +18,6 @@ RUN rm -rf /var/lib/apt/lists/*
 
 # Replace aliyun ntp server
 ADD ntp.conf /etc/ntp.conf
+
+# change default time zone
+RUN echo ZONE=Asia/Shanghai > /etc/sysconfig/clock && rm /etc/localtime && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
