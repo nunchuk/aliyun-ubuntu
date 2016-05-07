@@ -20,4 +20,4 @@ RUN rm -rf /var/lib/apt/lists/*
 ADD ntp.conf /etc/ntp.conf
 
 # change default time zone
-RUN echo ZONE=Asia/Shanghai > /etc/sysconfig/clock && rm /etc/localtime && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+RUN sed -i 's/Etc\/UTC/Asia\/Shanghai/g' /etc/timezone
