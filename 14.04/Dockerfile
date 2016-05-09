@@ -22,3 +22,6 @@ ADD ntp.conf /etc/ntp.conf
 # change default time zone
 # ls -R --group-directories-first /usr/share/zoneinfo
 RUN rm /etc/localtime && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+# change dns server
+RUN echo 'nameserver 223.5.5.5' >> /etc/resolvconf/resolv.conf.d/tail && resolvconf -u
