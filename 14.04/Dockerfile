@@ -4,7 +4,7 @@
 ############################################################
 
 FROM ubuntu:14.04
-MAINTAINER Zhang Xinye <xinye@zhijin.com>
+MAINTAINER XinYe <nunchuk@live.com>
 
 # Replace by aliyun repository URL instead the default sources
 RUN sed -i 's/archive.ubuntu.com/mirrors.aliyun.com/' /etc/apt/sources.list
