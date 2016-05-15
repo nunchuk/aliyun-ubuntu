@@ -1,5 +1,6 @@
- <img src="./logo.png" width="60" height="60" alt="logo" align=left />
-
+<!--![image](./logo.png =60)-->
+<img src="./logo.png" width="60" />
+ 
 # Ubuntu Docker Image With Chinese Localization
 
 This Docker image is based on the Docker official Ubuntu image, and adapt to the network environment of China.
