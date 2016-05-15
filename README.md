@@ -1,9 +1,9 @@
 <!--![image](./logo.png =60)-->
 <img src="https://raw.githubusercontent.com/nunchuk/aliyun-ubuntu/master/logo.png" width="60" />
- 
-# Ubuntu Docker Image With Chinese Localization
 
-This Docker image is based on the Docker official Ubuntu image, and adapt to the network environment of China.
+# Ubuntu Docker Image 
+
+This Docker image is based on the Docker official Ubuntu image with chinese localization.
 
 * `14.04`,`trusty`
 
