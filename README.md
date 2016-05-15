@@ -1,4 +1,4 @@
-![image](https://raw.githubusercontent.com/nunchuk/aliyun-ubuntu/master/logo.png =60x60)
+ <img src="./logo.png" width="60" height="60" alt="logo" align=left />
 
 # Ubuntu Docker Image With Chinese Localization
 
